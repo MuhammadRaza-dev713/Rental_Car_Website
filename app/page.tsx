@@ -8,6 +8,7 @@ import {fuels, yearsOfProduction} from "@/constants";
 import ShowMore from "@/components/ShowMore";
 
 
+// @ts-ignore
 export default async function Home({ searchParams }) {
     const allCars = await fetchCars({
         manufacturer: searchParams.manufacturer || '',
