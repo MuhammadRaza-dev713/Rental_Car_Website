@@ -51,7 +51,7 @@ const SearchBar = () =>
             searchParams.delete('manufacturer')
         }
         const newPathname = `${window.location.pathname}?${searchParams.toString()}`
-        router.push(newPathname)
+        router.push(newPathname,{scroll:false})
     }
 
     const [manufacturer,setManufacturer] = useState('')
