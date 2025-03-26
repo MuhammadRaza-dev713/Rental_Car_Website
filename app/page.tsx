@@ -20,9 +20,9 @@ export default async function Home({ searchParams }) {
 
     const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden px-[2rem] md:px-[4rem]">
       <Hero/>
-        <div className="mt-12 padding-x padding-y max-width" id="discover">
+        <div className="mt-12 padding-y max-width" id="discover">
             <div className="home__text-container">
                 <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
                 <p>Explore the cars you might like.</p>

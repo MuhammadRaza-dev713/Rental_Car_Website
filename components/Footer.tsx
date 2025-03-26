@@ -6,8 +6,8 @@ import {footerLinks} from "@/constants";
 const Footer = () =>
 {
     return(
-        <footer className="flex flex-col text-black-100 mt-5 border-t border-gray-100">
-            <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
+        <footer className="flex flex-col text-black-100 mt-5 bg-gray-100 px-[2rem] sm:px-[4rem]">
+            <div className="flex max-md:flex-col flex-wrap justify-between gap-5 py-10">
                 <div className="flex flex-col justify-start items-start gap-6">
                     <Image src="/logo.svg" alt="logo" width={118} height={18} className="object-contain" />
                     <p className="text-base text-gray-700">
@@ -29,9 +29,10 @@ const Footer = () =>
                     </div>
                 ))}</div>
             </div>
-                <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 py-10">
-                    <p>@2023 car hub. all right reserved</p>
-                    <div className="footer__copyrights-link">
+                <div className="flex justify-between flex-wrap mt-10 border-t border-gray-400 py-10 ">
+                <p className="">&copy; {new Date().getFullYear()} Car Hub. All rights reserved.</p>
+
+                    <div className=" flex gap-4">
                         <Link href="/"
                         className="text-gray-500">
                             Privacy Policy
